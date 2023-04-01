@@ -849,6 +849,14 @@ img{
 
 }
 
+@media screen and (min-width: 350px) and (max-width: 568px) {
+    .project_button_section {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+}
+
 /* For medium devices */
 @media screen and (min-width: 568px){
 

@@ -576,6 +576,9 @@ img{
 
 .portfolio_img{
     width: 265px;
+    height: auto;
+    object-fit: cover;
+    object-position: 0% 50%;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -583,6 +586,7 @@ img{
 .portfolio_title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
+    text-align: center;
 }
 
 .portfolio_description{
@@ -845,15 +849,156 @@ img{
         display: flex;
         flex-direction: row;
         gap: 5px;
+        justify-content: center;
     }
 
+    .portfolio_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .portfolio_tech_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+
+    .portfolio_tech_icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .portfolio_mobile_button {
+        display: flex;
+    }
+
+    .portfolio_tablet_button {
+        display: none;
+    }
+
+    .qualification_reclink {
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 350px) and (max-width: 568px) {
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .nav_menu{
+        padding: 2rem .25rem 4rem;
+    }
+
+    .nav_list{
+        column-gap: 0;
+    }
+
+    .home_content{
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home_scroll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .home_blob{
+        width: 180px;
+    }
+
+    .skills_title{
+        font-size: var(--normal-font-size);
+    }
+
+    .qualification_data{
+        gap: .5rem;
+    }
+
+    .portfolio_scroll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .project_button_section {
         display: flex;
         flex-direction: row;
         gap: 5px;
+        justify-content: center;
+    }
+
+    .portfolio_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .portfolio_tech_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+
+    .portfolio_tech_icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .portfolio_mobile_button {
+        display: flex;
+    }
+
+    .portfolio_tablet_button {
+        display: none;
+    }
+
+    .project_button_section {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .portfolio_tech_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+
+    .portfolio_tech_icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .portfolio_mobile_button {
+        display: flex;
+    }
+
+    .portfolio_tablet_button {
+        display: none;
+    }
+
+    .qualification_reclink {
+        cursor: pointer;
     }
 }
 
@@ -877,7 +1022,6 @@ img{
 
     .about_container,
     .skills_container,
-    .portfolio_content,
     .project_container,
     .contact_container,
     .footer_container{
@@ -888,7 +1032,6 @@ img{
         min-height: 382px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
@@ -907,6 +1050,35 @@ img{
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .portfolio_tech_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+
+    .portfolio_tech_icon {
+        height: 70px;
+        width: 70px;
+    }
+
+    .portfolio_tablet_button {
+        display: none;
+    }
+
+    .project_button_section {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .qualification_reclink {
+        cursor: pointer;
     }
 }
 
@@ -1017,7 +1189,9 @@ img{
     }
 
     .portfolio_img{
-        width: 320px;
+        width: 100%;
+        height: auto;
+        object-fit: fill;
     }
 
     .portfolio_content{
@@ -1043,6 +1217,14 @@ img{
 
     .footer_copy{
         margin-top: 4.5rem;
+    }
+
+    .portfolio_mobile_button {
+        display: none;
+    }
+
+    .portfolio_tablet_button {
+        display: flex;
     }
 }
 

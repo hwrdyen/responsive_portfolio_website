@@ -127,8 +127,23 @@ img{
     color: #437e6e;
 }
 
+.section_subtitle_project{
+    display: block;
+    font-size: 1rem;
+    color: #437e6e;
+}
+
+.section_comment {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: var(--mb-3);
+    padding: 0 1.5rem;
+}
+
 .section_title,
-.section_subtitle{
+.section_subtitle,
+.section_subtitle_project,
+.section_comment{
     text-align: center;
 }
 
@@ -1097,6 +1112,14 @@ img{
     }
 
     .section_subtitle{
+        margin-bottom: 4rem;
+    }
+
+    .section_subtitle_project{
+        margin-bottom: 0rem;
+    }
+
+    .section_comment{
         margin-bottom: 4rem;
     }
 

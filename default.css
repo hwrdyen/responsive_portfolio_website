@@ -596,6 +596,7 @@ img{
     object-position: 0% 50%;
     border-radius: .5rem;
     justify-self: center;
+
 }
 
 .portfolio_title{
@@ -1216,6 +1217,11 @@ img{
         height: 250px;
         object-fit: contain;
         object-position: center;
+        cursor: pointer;
+    }
+
+    .portfolio_img:hover { 
+        transform: scale(1.5); 
     }
 
     .portfolio_content{

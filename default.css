@@ -877,22 +877,42 @@ img{
     }
 
     .portfolio_tech_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 3px;
         margin: 10px 0px;
     }
 
+    .portfolio_tech_tag {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        background-color: #437e6e;
+        border-radius: 50px;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .portfolio_tech_tag:hover {
+        background-color: #126750;
+        
+    }
+
     .portfolio_tech_icon {
-        height: 50px;
-        width: 50px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .portfolio_tech_name {
+        font-size: 10px;
     }
 
     .portfolio_mobile_button {
         display: flex;
+        padding: 5px;
+        font-size: 12px;
     }
 
     .portfolio_tablet_button {
@@ -962,51 +982,48 @@ img{
     }
 
     .portfolio_tech_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 5%;
         margin: 10px 0px;
     }
 
-    .portfolio_tech_icon {
-        height: 50px;
-        width: 50px;
-    }
-
-    .portfolio_mobile_button {
+    .portfolio_tech_tag {
         display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        background-color: #437e6e;
+        border-radius: 50px;
+        padding: 6px;
+        cursor: pointer;
     }
 
-    .portfolio_tablet_button {
-        display: none;
+    .portfolio_tech_tag:hover {
+        background-color: #126750;
+        
     }
 
+    .portfolio_tech_icon {
+        height: 10px;
+        width: 10px;
+    }
+
+    .portfolio_tech_name {
+        font-size: 10px;
+    }
+    
     .project_button_section {
         display: flex;
         flex-direction: row;
         gap: 5px;
     }
 
-    .portfolio_tech_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 10px 0px;
-    }
-
-    .portfolio_tech_icon {
-        height: 50px;
-        width: 50px;
-    }
-
     .portfolio_mobile_button {
         display: flex;
+        padding: 5px;
+        font-size: 12px;
     }
 
     .portfolio_tablet_button {
@@ -1069,28 +1086,53 @@ img{
     }
 
     .portfolio_tech_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 5%;
         margin: 10px 0px;
     }
 
-    .portfolio_tech_icon {
-        height: 70px;
-        width: 70px;
+    .portfolio_tech_tag {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        background-color: #437e6e;
+        border-radius: 50px;
+        padding: 6px 10px;
+        cursor: pointer;
     }
 
-    .portfolio_tablet_button {
+    .portfolio_tech_tag:hover {
+        background-color: #126750;
+        
+    }
+
+    .portfolio_tech_icon {
+        height: 10px;
+        width: 10px;
+    }
+
+    .portfolio_tech_name {
+        font-size: 10px;
+    }
+    
+
+    .portfolio_mobile_button {
         display: none;
     }
 
+
     .project_button_section {
         display: flex;
-        flex-direction: row;
-        gap: 15px;
+        gap: 30px;
+    }
+
+    .portfolio_tablet_button {
+        display: flex;
+        padding: 5px 15px;
+        font-size: 12px;
     }
 
     .qualification_reclink {

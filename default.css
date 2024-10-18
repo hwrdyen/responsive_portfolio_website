@@ -491,6 +491,11 @@ img{
     overflow: hidden;
 }
 
+.skills_close .techstack-icons{
+    height: 0;
+    overflow: hidden;
+}
+
 .skills_open .skills_list{
     height: max-content;
     margin-bottom: var(--mb-2-5);
@@ -847,6 +852,25 @@ img{
         width: 180px;
     }
 
+    /*==================== TechStach ====================*/
+    .techstack-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .techstack-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    svg {
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
     .skills_title{
         font-size: var(--normal-font-size);
     }
@@ -951,6 +975,26 @@ img{
     .home_blob{
         width: 180px;
     }
+
+    /*==================== TechStach ====================*/
+    .techstack-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .techstack-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    svg {
+        overflow: hidden;
+        vertical-align: middle;
+    }
+    
 
     .skills_title{
         font-size: var(--normal-font-size);
@@ -1059,6 +1103,25 @@ img{
     .contact_container,
     .footer_container{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*==================== TechStach ====================*/
+    .techstack-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .techstack-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    svg {
+        overflow: hidden;
+        vertical-align: middle;
     }
 
     .portfolio_data {

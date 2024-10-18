@@ -29,7 +29,7 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== ACCORDION SKILLS (currently not working)====================*/
+/*==================== ACCORDION SKILLS ====================*/
 
 const skillsContent = document.getElementsByClassName("skills_content"),
   skillsHeader = document.querySelectorAll(".skills_header");
@@ -50,7 +50,7 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 
-/*==================== QUALIFICATION TABS (currently not working) ====================*/
+/*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll("[data-target]"),
   tabContents = document.querySelectorAll("[data-content]");
 
@@ -72,22 +72,6 @@ tabs.forEach((tab) => {
 
 /*==================== SERVICES MODAL ====================*/
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper(".portfolio_container", {
-  cssMode: true,
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 /*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -97,7 +81,6 @@ function scrollActive() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
-    console.log(current);
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
     let sectionId = current.getAttribute("id");

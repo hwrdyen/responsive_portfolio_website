@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -305,6 +305,32 @@ img{
     font-size: var(--big-font-size);
 }
 
+/* Typing Animation */
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; /* Change this to 100% to match the container's width */
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typing-animation {
+    display: inline-block; /* Make sure it behaves like text */
+    border-right: 2px solid; /* The "cursor" */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures hidden overflow during typing */
+    animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+    width: 100%; /* Set width to 100% for the typing effect */
+    max-width: fit-content; /* Optional: limit width to text content */
+  }
+
 .home_subtitle{
     font-size: var(--h3-font-size);
     color: #437e6e;
@@ -415,8 +441,9 @@ img{
 .skills_header{
     display: flex;
     align-items: center;
-    margin-bottom: var(--mb-2-5);
+    justify-content: center;
     cursor: pointer;
+    color: var(--first-color);
 }
 
 .skills_icon,
@@ -439,7 +466,6 @@ img{
 }
 
 .skills_arrow{
-    margin-left: auto;
     transition: .4s;
 }
 
@@ -494,6 +520,10 @@ img{
 .skills_close .techstack-icons{
     height: 0;
     overflow: hidden;
+}
+
+.techstack-icon-img {
+    font-size: 36px;
 }
 
 .skills_open .skills_list{
@@ -576,6 +606,14 @@ img{
 }
 
 .qualification_button.qualification_active{
+    color: var(--first-color);
+}
+
+.qualification_reclink {
+    color: var(--first-color);
+}
+
+.qualification_reclink:visited {
     color: var(--first-color);
 }
 
@@ -897,7 +935,8 @@ img{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        /* gap: 50px; */
+        gap: 1.5rem;
     }
 
     .portfolio_tech_container {
@@ -1022,7 +1061,8 @@ img{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        /* gap: 50px; */
+        gap: 1.5rem;
     }
 
     .portfolio_tech_container {
@@ -1098,7 +1138,6 @@ img{
     }
 
     .about_container,
-    .skills_container,
     .project_container,
     .contact_container,
     .footer_container{
@@ -1110,6 +1149,7 @@ img{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 0px 5rem;
     }
 
     .techstack-icon {

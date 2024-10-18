@@ -570,7 +570,7 @@ img{
     display: block;
 }
 
-.qualification_button .qualification_active{
+.qualification_button.qualification_active{
     color: var(--first-color);
 }
 
@@ -1266,9 +1266,9 @@ img{
         cursor: pointer;
     }
 
-    .portfolio_img:hover { 
+    /* .portfolio_img:hover { 
         transform: scale(1.5); 
-    }
+    } */
 
     .portfolio_content{
         align-items: center;

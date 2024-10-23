@@ -436,6 +436,17 @@ img{
 /*==================== SKILLS ====================*/
 .skills_container{
     row-gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills_header{
@@ -444,6 +455,13 @@ img{
     justify-content: center;
     cursor: pointer;
     color: var(--first-color);
+
+}
+
+.skills_header:hover {
+    background-color: #274867;
+    border-radius: 20px;
+    padding: 5px 10px;
 }
 
 .skills_icon,
